@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center d-block p-2 bg-dark text-white">
+    </br>
+    <h1>{{user.username}}의 Profile Update</h1>
+    </br>
+</div>
+<div class="container">
+    <div class="d-flex justify-content-center">
+            {% if error_msg %}
+            <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Error</strong> {{error_msg}}
+            </div>
+            {% endif %}
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                </br>
+                {{ user_form.as_p }}
+                {{ profile_form.as_p }}
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-dark" type="submit" value="Update" />
+                </div>
+            </form>
+        </p>
+    </div>
+</div>
+</br>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p><img src="{{ object.image.url }}" class="img-thumbnail"></p>
+            </div>
+            <div class="col-8">
+                <h2>{{ object.name }}</h2>
+                <hr>
+                <p>{{ object.price }} 원</p>
+                <p>{{ object.description |linebreaksbr }}</p>
+                <p>{{ object.pub_date |linebreaksbr }}</p>
+                <div class="col">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'product:virtual_try_on' pk=product.id %}"><button type="button" class="btn btn-dark">입어보기</button></a>
+                    <button type="button" class="btn btn-outline-dark">구매하기</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+{% endblock %}
