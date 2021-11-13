@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    </br>
+    <div class="d-flex justify-content-center">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-4">
+                <figure class="figure">
+                  <img src="{{ request.user.profile.image.url }}" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-center">내 사진</figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-4">
+                <figure class="figure">
+                  <img src="{{ product.image.url }}" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-center">상품 사진</figcaption>
+                </figure>
+              </div>
+              <div class="col-lg-4">
+                    <figure class="figure">
+                      <img src="{{ result }}" class="figure-img img-fluid rounded" alt="...">
+                      <figcaption class="figure-caption text-center">virtual try on</figcaption>
+                    </figure>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    </br>
+{% endblock %}
+

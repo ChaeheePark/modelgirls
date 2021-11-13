@@ -1,0 +1,15 @@
+asgiref==3.4.1
+bootstrap4==0.1.0
+Django==3.2.9
+future==0.18.2
+numpy==1.19.5
+opencv-python==4.5.4.58
+Pillow==8.4.0
+pytz==2021.3
+reserve==0.3
+six==1.16.0
+sqlparse==0.4.2
+torch==1.6.0+cpu
+torchgeometry==0.1.2
+torchvision==0.4.2+cu92
+typing-extensions==3.10.0.2

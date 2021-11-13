@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    </br>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                    {% if profile_user.profile.image %}
+                    <img class="round" src="{{profile_user.profile.image.url}}" height="90%", width="90%"> <br>
+                    {% else %}
+                    <img class="round" src="{% static 'assets/user.png' %}" height="200"width="200"> <br>
+                    {% endif %}
+                    </br>
+                </div>
+                <div class="col">
+                    <h2> ID: {{profile_user.username}} </h2>
+                    <hr>
+                    <h3>닉네임: {{profile_user.profile.nickname}}</h3>
+                    <h3> 이름: {{profile_user.last_name}} {{profile_user.first_name}} </h3>
+                    <h3> bio: {{profile_user.profile.bio}} </h3>
+                    </br>
+                    <div class="d-flex justify-content-center">
+                        {% if user == profile_user %}
+                        <a href="{% url 'user:profile_update' %}">
+                            <button type="button" class="btn btn-dark">프로필 편집</button></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+{% endblock %}
