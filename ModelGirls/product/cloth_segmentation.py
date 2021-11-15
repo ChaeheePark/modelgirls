@@ -36,5 +36,3 @@ def cloth_segmetation(img_name, cloth_path, mask_path):
     image = cv2.imread(cloth_path+img_name)
     # image = cv2.resize(image, (768, 1024), interpolation=cv2.INTER_LINEAR)
     cv2.imwrite(cloth_path+img_name, image)
-
-cloth_segmetation('23456_00.jpg', './datasets/test/cloth/', './datasets/test/cloth-mask/')

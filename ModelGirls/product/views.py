@@ -5,6 +5,7 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.shortcuts import redirect
 
 from user.models import Profile
+from .cloth_segmentation import cloth_segmetation
 from .models import Product
 import os
 
@@ -19,9 +20,10 @@ def virtual_try_on(request, pk):
     product_image = product_image.replace("cloth/", "")
     user_image = user_image.replace("image/", "")
     write_filename(user_image, product_image)
+
+    cloth_segmetation(product_image, 'VITON-HD/datasets/test/cloth/', 'VITON-HD/datasets/test/cloth-mask/')
     os.system('python VITON-HD/test.py  --name 결과')
     result = '/static/results/결과/{}_{}'.format(user_image.split('_')[0], product_image)
-
     return render(request, 'product/try_on.html', {'product': product, 'result': result})
 
 def write_filename(filename1, filename2):
