@@ -4,7 +4,7 @@
 
 아래 사진 클릭 시 서비스 발표 영상으로 이동합니다😉
 
-[![발표영상](https://img.youtube.com/vi/https://youtu.be/l_vVrk0tgFQ/1.jpg)]( https://youtu.be/l_vVrk0tgFQ)
+[![발표영상](https://img.youtube.com/vi/l_vVrk0tgFQ/hqdefault.jpg)]( https://youtu.be/l_vVrk0tgFQ)
 
 
 
@@ -28,7 +28,7 @@
 
 ## 개발 목표
 
-대한민국 대표 온라인 패션커머스 기업인 **무신사스토어** 에 사용자의 사진과 의류 사진을 합성하는 가상 피팅 서비스를 제공 (사진 출처 : https://store.musinsa.com/app/goods/903340)
+대한민국 대표 온라인 패션커머스 기업인 **무신사스토어** 에 사용자의 사진과 의류 사진을 합성하는 가상 피팅 서비스를 제공한다. (사진 출처 : https://store.musinsa.com/app/goods/903340)
 
 ![image](https://user-images.githubusercontent.com/60170358/141873964-074b6ea2-a2a6-4c67-9a4f-14ee24a52df6.png)
 
