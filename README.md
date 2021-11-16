@@ -2,6 +2,10 @@
 
 > VITON-HD를 이용한 무신사 제품 가상 피팅 서비스 (2021학년도 2학기 기계학습 팀 프로젝트)
 
+아래 사진 클릭 시 서비스 발표 영상으로 이동합니다😉
+
+[![발표영상](https://img.youtube.com/vi/https://youtu.be/l_vVrk0tgFQ/1.jpg)]( https://youtu.be/l_vVrk0tgFQ)
+
 
 
 -----
