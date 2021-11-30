@@ -46,6 +46,8 @@
 
 ![image](https://user-images.githubusercontent.com/60170358/141874516-da72366b-e474-43e7-bdd9-edff84859b07.png)
 
+**Dataset**
+
 이미지 기반 virtual try-on 모델으로, 원하는 옷 이미지로 사용자의 상의를 가상피팅한다. dataset은 온라인 쇼핑몰 웹사이트에서 13,679의 여성 정면과 상의 이미지를 크롤링 하였다.  고해상도 구현을 위해 1024x768 해상도의 이미지를 수집하였고, Train dataset 11,647개와 Test dataset 2,032개로 나누었다. 
 
 ![image](https://user-images.githubusercontent.com/60170358/141874312-be04ce8e-bd09-45c6-acf7-cb73c0e3abca.png)
@@ -69,6 +71,8 @@
 ![image](https://user-images.githubusercontent.com/60170358/141874088-4839dc63-4d7a-4d30-8a03-2712990f1782.png)
 
 
+
+**ALIAS Generator**
 
 기존 VITON과 구별되는 점은 마지막 (d) 부분인 Try-On Synthesis 부분에서 ALIAS Generator을 사용하였다. ALIAS Generator는 아래 사진과 같이 사람의 체형에 따른 이미지와 옷의 이미지가 matching 이 잘 일어나지 않는 부분(mismatching)도 잘 match 시켜주게 하는 생성 모델이다.
 
@@ -94,7 +98,7 @@
 
 
 
-**2.**  **온라인 쇼핑 시장에의 긍정적 영향**
+**2.**  **온라인 쇼핑 시장에서의 긍정적 영향**
 
 우리는 가상 피팅 서비스를 통해 직접 제품을 피팅해볼 수 없다는 온라인 쇼핑몰의 단점을 보완할 수 있을 것이라고 생각한다. 이러한 단점이 보완된다면 반품률이 감소할 것이며, 반품 및 교환에 소모되는 비용이 절감될 것이다. 또한 기존에 직접 제품을 피팅해보지 못해 온라인 구매를 꺼렸던 소비자들의 온라인 소비를 활성화하는 데에도 도움이 될 것이다. 이는 사업자와 소비자 모두에게 긍정적인 영향을 줄 것이며, 온라인 쇼핑몰 시장이 발전하는 데에 큰 도움이 될 것이다.
 
